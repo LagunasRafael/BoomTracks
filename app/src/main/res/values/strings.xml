@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BoomTracks</string>
+    <string name="texto01">Correo Electronico</string>
+    <string name="texto02">Contraseña</string>
+    <string name="texto03">Nombre de Usuario</string>
+    <string name="texto04">Confirmar Contraseña</string>
+    <string name="texto05">Registrarme</string>
+    <string name="texto06">Regresar</string>
+</resources>

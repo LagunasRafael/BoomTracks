@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "173413052802",
+    "project_id": "boomtracks-d0e79",
+    "storage_bucket": "boomtracks-d0e79.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173413052802:android:a19729e9c13e0b9daf5f9b",
+        "android_client_info": {
+          "package_name": "com.example.boomtracks"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw75IvkkDvnuNKC-arYFUxmuA4OvuyE68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    tools:context=".Menu">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nuevo Usuario"
+            android:textColor="#C32217"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp">
+
+            <CheckBox
+                android:id="@+id/cbCliente_registro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cliente"
+                android:onClick="onCheckBoxClicked"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_marginHorizontal="10dp"
+                />
+
+            <CheckBox
+                android:id="@+id/cbProductor_registro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Productor"
+                android:onClick="onCheckBoxClicked"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_marginHorizontal="10dp"
+                />
+
+
+
+            <CheckBox
+                android:id="@+id/cbAdmin_registro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Administrador"
+                android:onClick="onCheckBoxClicked"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_marginHorizontal="10dp"
+                />
+
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/texto01"
+            app:boxStrokeColor="#1E3AC3"
+            android:layout_marginTop="5dp"
+            app:hintTextColor="#C32217"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtNombreUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/texto03"
+            app:boxStrokeColor="#1E3AC3"
+            android:layout_marginTop="7dp"
+            app:hintTextColor="#C32217"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/texto02"
+            app:boxStrokeColor="#1E3AC3"
+            android:layout_marginTop="5dp"
+            app:hintTextColor="#C32217"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/texto04"
+            app:boxStrokeColor="#1E3AC3"
+            android:layout_marginTop="5dp"
+            app:hintTextColor="#C32217"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+        <Button
+            android:id="@+id/btnRegistrarse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:text="@string/texto05"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#C32217"
+            />
+
+        <Button
+            android:id="@+id/btnEstoyregistrado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:text="@string/texto06"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#C32217"
+            />
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
