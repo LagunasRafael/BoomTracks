@@ -21,6 +21,7 @@ class Login : AppCompatActivity() {
     private lateinit var password: TextInputLayout
     private lateinit var btnIngresar: Button
     private lateinit var btnNoEstoyRegistrado: MaterialButton
+    private lateinit var btnMenus: Button
 
     private lateinit var auth: FirebaseAuth
 
@@ -44,6 +45,7 @@ class Login : AppCompatActivity() {
         password = findViewById(R.id.txtContrasena)
         btnIngresar = findViewById(R.id.btnIngresar)
         btnNoEstoyRegistrado = findViewById(R.id.btnNoRegistrado)
+        btnMenus = findViewById(R.id.btnMenu)
 
         btnIngresar.setOnClickListener {
             val _correo = correo.editText?.text.toString()
@@ -88,6 +90,11 @@ class Login : AppCompatActivity() {
 
         btnNoEstoyRegistrado.setOnClickListener {
             val intent = Intent(this,Registro::class.java)
+            startActivity(intent)
+        }
+
+        btnMenus.setOnClickListener {
+            val intent = Intent(this,Menu::class.java)
             startActivity(intent)
         }
 
