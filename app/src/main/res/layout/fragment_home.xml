@@ -1,16 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:background="@color/white">
+    android:background="#343535">
 
-    <!-- Un texto simple como contenido inicial -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bienvenido al Inicio"
-        android:textSize="18sp"
-        android:textColor="@color/black" />
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="0dp">
+
+        <!-- Sección para perfil y nombre -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="10dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circle_background" />
+                <ImageView
+                    android:id="@+id/profile_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/billieeilish"
+                    android:scaleType="centerCrop" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/nombrePerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Billie Eilish"
+                android:textSize="22sp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- Video y opciones -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/white"
+            android:text="Billie Eilish - Birds Of A Feather" />
+
+        <WebView
+            android:id="@+id/youtube_webview"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="200dp" />
+
+        <!-- Botones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/btn_like"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/like"
+                android:contentDescription="Like" />
+
+            <ImageButton
+                android:id="@+id/btn_comment"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/comentar"
+                android:contentDescription="Comentar" />
+        </LinearLayout>
+
+        <!-- Comentarios -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/input_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escribe un comentario..."
+                android:background="#545454"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/comments_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Comentarios:\n- Excelente contenido!"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

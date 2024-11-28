@@ -1,0 +1,23 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <ImageView
+    android:id="@+id/genre_image"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:src="@drawable/indie"
+    android:layout_marginBottom="8dp" />
+
+    <TextView
+    android:id="@+id/genre_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Genre"
+    android:textSize="16sp"
+    android:textColor="#000000"/>
+    </LinearLayout>
