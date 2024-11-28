@@ -2,14 +2,69 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
+    android:padding="16dp"
     android:background="#343535">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tu perfil"
-        android:textSize="18sp"
-        android:textColor="@color/black" />
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/about_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nosotros"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Imagen o logo -->
+        <ImageView
+            android:id="@+id/about_image"
+            android:layout_width="500dp"
+            android:layout_height="150dp"
+            android:src="@drawable/imagenestudio"
+            android:contentDescription="Logo"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Descripción -->
+        <TextView
+            android:id="@+id/about_description"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="BoomTracks! es una plataforma fundada en el año de 2023 por 3 estudiantes, la inspiracion para la creacion de esta plataforma se debe a la falta de una plataforma que le de la oportunidad a los artistas nuevos de poder publicar sus proyectos nuevos y poder colaborar con otras personas del mundo y asi facilitar la interacion de los artistas tanto como de los productores
+"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="16dp" />
+
+
+        <!-- Imagen o logo -->
+        <ImageView
+            android:id="@+id/instrumentos"
+            android:layout_width="500dp"
+            android:layout_height="150dp"
+            android:src="@drawable/instrumentos"
+            android:layout_marginTop="20dp"
+            android:contentDescription="Logo"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Información adicional -->
+        <TextView
+            android:id="@+id/about_contact"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Buscamos ser un motor de cambio en la industria musical, donde el talento y la creatividad sean los pilares de una comunidad vibrante y global. Visualizamos una red en la que los nuevos artistas y productores encuentren inspiración, colaboren entre sí y sean reconocidos por su autenticidad y habilidades. Aspiramos a forjar un futuro donde la música sea un puente que conecta culturas y emociones, uniendo a personas de todo el mundo en armonía.
+"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp" />
+    </LinearLayout>
 </ScrollView>
