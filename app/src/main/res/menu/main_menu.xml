@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/menu_home"
-        android:title="Home"
-        android:icon="@mipmap/ic_home"/>
+
 
     <item android:id="@+id/menu_perfil"
         android:title="Perfil"
@@ -12,5 +10,17 @@
     <item android:id="@+id/menu_explorar"
         android:title="Explorar"
         android:icon="@mipmap/ic_explorar"/>
+
+    <item android:id="@+id/menu_home"
+        android:title="Home"
+        android:icon="@mipmap/ic_home"/>
+
+    <item android:id="@+id/menu_Nosotros"
+        android:title="Nosotros"
+        android:icon="@mipmap/ic_nosotros"/>
+
+    <item android:id="@+id/menu_Contacto"
+        android:title="Contacto"
+        android:icon="@mipmap/ic_contacto"/>
 
 </menu>
