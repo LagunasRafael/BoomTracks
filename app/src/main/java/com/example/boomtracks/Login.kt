@@ -3,6 +3,7 @@ package com.example.boomtracks
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
@@ -47,66 +48,67 @@ class Login : AppCompatActivity() {
         btnNoEstoyRegistrado = findViewById(R.id.btnNoRegistrado)
         btnMenus = findViewById(R.id.btnMenu)
 
-        btnIngresar.setOnClickListener {
-            val _correo = correo.editText?.text.toString()
-            val _password = password.editText?.text.toString()
-            if(_correo.isNotEmpty() && _password.isNotEmpty()){
-                auth.signInWithEmailAndPassword(_correo, _password)
-                    .addOnCompleteListener {
-                        if(it.isSuccessful){
-                            coleccion.collection("usuarios")
-                                .document(_correo)
-                                .get()
-                                .addOnSuccessListener { documento ->
-//                                    val _usuario = Usuario(
-//                                        _correo,
-//                                        documento.getString("nombre"),
-//                                        documento.getString("apaterno"),
-//                                        documento.getString("amaterno")
-//                                    )
-                                    val _usuario = documento.toObject(Usuario::class.java)!!
+        val emailInput = findViewById<EditText>(R.id.emailInput) // EditText para el correo
+        val btnIngresar = findViewById<Button>(R.id.btnIngresar) // Botón para iniciar sesión
 
-                                    if (_usuario != null) {
-                                        if((_usuario.perfil_admin)){
-                                            val intent = Intent(this@Login, Admin_Principal::class.java)
-                                            intent.putExtra("usuario",_usuario)
-                                            startActivity(intent)
-                                        } else{
-                                            val intent = Intent(this@Login, Menu::class.java)
-                                            intent.putExtra("usuario",_usuario)
-                                            startActivity(intent)
-                                        }
-                                    } else {
-                                        Toast.makeText(this@Login, "No se encontro el usuario",
-                                            Toast.LENGTH_SHORT).show()
-                                    }
-                                }
-                        } else{
-                            showAlert()
-                        }
-                    }
+
+        btnIngresar.setOnClickListener {
+            val correo = emailInput.text.toString().trim()
+
+            // Validar el correo y redirigir
+            val tipoUsuario = redirigirUsuario(correo)
+
+            when (tipoUsuario) {
+                "admin" -> {
+                    // Redirigir a la pantalla de administradores
+                    val intent = Intent(this, Admin_Principal::class.java)
+                    startActivity(intent)
+                    Toast.makeText(this, "Bienvenido, Administrador", Toast.LENGTH_SHORT).show()
+                }
+                "cliente" -> {
+                    // Redirigir a la pantalla de clientes
+                    val intent = Intent(this, Menu::class.java)
+                    startActivity(intent)
+                    Toast.makeText(this, "Bienvenido, Cliente", Toast.LENGTH_SHORT).show()
+                }
+                "error" -> {
+                    // Mostrar error si el correo no pertenece a ninguna lista
+                    Toast.makeText(this, "Correo no reconocido. Por favor, verifica tus credenciales.", Toast.LENGTH_SHORT).show()
+                }
             }
         }
 
-        btnNoEstoyRegistrado.setOnClickListener {
-            val intent = Intent(this,Registro::class.java)
-            startActivity(intent)
+
+            btnNoEstoyRegistrado.setOnClickListener {
+                val intent = Intent(this, Registro::class.java)
+                startActivity(intent)
+            }
+
+            btnMenus.setOnClickListener {
+                val intent = Intent(this, Menu::class.java)
+                startActivity(intent)
+            }
+
         }
 
-        btnMenus.setOnClickListener {
-            val intent = Intent(this,Menu::class.java)
-            startActivity(intent)
+    private fun redirigirUsuario(correo: String): String {
+        val correosAdmin = listOf("rafa@gmail.com", "baca@gmail.com")
+        val correosUsuarios = listOf("juan@gmail.com", "diego@gmail.com")
+
+        return when {
+            correo in correosAdmin -> "admin"
+            correo in correosUsuarios -> "cliente"
+            else -> "error" // Indica que el correo no pertenece a ninguna lista
         }
-
     }
 
-    private fun showAlert(){
-        val builder = AlertDialog.Builder(this)
-        builder.setTitle("Error")
-        builder.setMessage("Se ha producido un error autenticando al usuario")
-        builder.setPositiveButton("Aceptar",null)
-        val dialogo: AlertDialog = builder.create()
-        dialogo.show()
-    }
+        private fun showAlert() {
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Error")
+            builder.setMessage("Se ha producido un error autenticando al usuario")
+            builder.setPositiveButton("Aceptar", null)
+            val dialogo: AlertDialog = builder.create()
+            dialogo.show()
 
+    }
 }
