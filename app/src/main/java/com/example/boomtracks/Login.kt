@@ -79,17 +79,17 @@ class Login : AppCompatActivity() {
         }
 
 
-            btnNoEstoyRegistrado.setOnClickListener {
-                val intent = Intent(this, Registro::class.java)
-                startActivity(intent)
-            }
-
-            btnMenus.setOnClickListener {
-                val intent = Intent(this, Menu::class.java)
-                startActivity(intent)
-            }
-
+        btnNoEstoyRegistrado.setOnClickListener {
+            val intent = Intent(this, Registro::class.java)
+            startActivity(intent)
         }
+
+        btnMenus.setOnClickListener {
+            val intent = Intent(this, Menu::class.java)
+            startActivity(intent)
+        }
+
+    }
 
     private fun redirigirUsuario(correo: String): String {
         val correosAdmin = listOf("rafa@gmail.com", "baca@gmail.com")
@@ -102,13 +102,13 @@ class Login : AppCompatActivity() {
         }
     }
 
-        private fun showAlert() {
-            val builder = AlertDialog.Builder(this)
-            builder.setTitle("Error")
-            builder.setMessage("Se ha producido un error autenticando al usuario")
-            builder.setPositiveButton("Aceptar", null)
-            val dialogo: AlertDialog = builder.create()
-            dialogo.show()
+    private fun showAlert() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Error")
+        builder.setMessage("Se ha producido un error autenticando al usuario")
+        builder.setPositiveButton("Aceptar", null)
+        val dialogo: AlertDialog = builder.create()
+        dialogo.show()
 
     }
 }
