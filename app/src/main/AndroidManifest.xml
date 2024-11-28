@@ -13,6 +13,10 @@
         android:theme="@style/Theme.BoomTracks"
         tools:targetApi="31">
         <activity
+            android:name=".NosotrosFragment"
+            android:exported="false"
+            android:theme="@style/Theme.BoomTracks" />
+        <activity
             android:name=".Explorar"
             android:exported="false" />
         <activity

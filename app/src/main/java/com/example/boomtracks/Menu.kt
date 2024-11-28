@@ -76,6 +76,26 @@ class Menu : AppCompatActivity() {
                     true
                 }
 
+                R.id.menu_Contacto -> {
+//                    // Acción para "explorar"
+//                    supportFragmentManager.beginTransaction()
+//                        .replace(R.id.fragment_container, ProfileFragment())
+//                        .commit()
+
+                    replaceFragment(ContactoFragment())
+                    true
+                }
+
+                R.id.menu_Nosotros -> {
+//                    // Acción para "explorar"
+//                    supportFragmentManager.beginTransaction()
+//                        .replace(R.id.fragment_container, ProfileFragment())
+//                        .commit()
+
+                    replaceFragment(NosotrosFragment())
+                    true
+                }
+
                 else -> false
             }
         }
