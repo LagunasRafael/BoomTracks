@@ -122,7 +122,6 @@
                 android:text="+"
                 android:backgroundTint="@color/gray_dark"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="100dp"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
 

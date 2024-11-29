@@ -43,10 +43,21 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             println("Like presionado")
         }
 
-        btnAgregar.setOnClickListener{
-            val intent = Intent(requireActivity(), Menu::class.java)
-            startActivity(intent)
+        btnAgregar.setOnClickListener {
+            // Iniciar una nueva transacción para cambiar de fragmento
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+
+            // Crear una instancia del fragmento de destino (CrearProyectoFragment)
+            val fragment = CrearProyectoFragment()
+
+            // Agregar el fragmento al contenedor
+            transaction.replace(R.id.fragment_container, fragment)
+
+            // Confirmar la transacción
+            transaction.addToBackStack(null) // Esto permite que el fragmento se pueda volver atrás
+            transaction.commit()
         }
+
 
         btnComment.setOnClickListener {
             val comment = inputComment.text.toString()
