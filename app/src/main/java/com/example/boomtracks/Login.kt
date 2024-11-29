@@ -82,10 +82,6 @@ class Login : AppCompatActivity() {
             startActivity(intent)
         }
 
-        btnMenus.setOnClickListener {
-            val intent = Intent(this, Menu::class.java)
-            startActivity(intent)
-        }
 
     }
 
