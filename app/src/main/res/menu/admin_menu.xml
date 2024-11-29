@@ -9,6 +9,10 @@
         android:title="Usuarios"
         android:icon="@mipmap/ic_nosotros"/>
 
+    <item android:id="@+id/menu_publicaciones"
+        android:title="Proyectos"
+        android:icon="@mipmap/ic_publicaciones"/>
+
 
 
 </menu>
