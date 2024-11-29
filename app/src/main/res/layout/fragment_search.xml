@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="#343535">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,10 +17,11 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:hint="Buscar"
-
+            android:textColorHint="@color/white"
             android:background="@drawable/search_bar_background"
             android:paddingStart="12dp"
             android:paddingEnd="12dp"
+            android:backgroundTint="@color/gray_dark"
             android:layout_marginBottom="16dp"
             android:inputType="text" />
 
@@ -39,6 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Géneros"
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginBottom="8dp"/>
@@ -56,6 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Playlist"
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginBottom="8dp"/>
