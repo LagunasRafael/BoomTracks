@@ -27,10 +27,13 @@
             android:orientation="horizontal"
             android:gravity="center_vertical">
 
+
+
             <FrameLayout
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginEnd="10dp">
+
 
                 <ImageView
                     android:id="@+id/profile_picture_1"
@@ -48,6 +51,29 @@
                 android:text="Billie Eilish"
                 android:textSize="22sp"
                 android:textColor="@color/white" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+
+                android:layout_marginEnd="10dp">
+
+                <Button
+                    android:id="@+id/btnUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:icon="@mipmap/ic_perfil"
+                    android:layout_marginLeft="90dp"
+                    android:background="@mipmap/ic_perfil"
+                    android:layout_marginRight="30dp"/>
+
+
+
+            </FrameLayout>
+
+
         </LinearLayout>
 
         <TextView
