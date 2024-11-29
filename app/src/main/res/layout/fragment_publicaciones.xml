@@ -1,6 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="#343535">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Contenedor Vertical para las publicaciones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROYECTOS"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="start"
+            android:textStyle="bold"
+            android:paddingBottom="20dp"/>
+
+        <!-- Publicación 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="@color/gray_dark">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <!-- Imagen de portada del proyecto -->
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/brunomars"
+                    android:contentDescription="Portada del Proyecto"
+                    android:scaleType="centerCrop"/>
+
+                <!-- Detalles del proyecto -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!-- Nombre del Proyecto -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lady Gaga, Bruno Mars - Die With A Smile"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="8dp"/>
+
+                    <!-- Descripción del Proyecto -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Music video by Lady Gaga, Bruno Mars performing Die With A Smile.© 2024 Interscope Records."
+                        android:textSize="14sp"
+                        android:textColor="@color/gray_light"
+                        android:maxLines="3"
+                        android:ellipsize="end"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Publicación 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="@color/gray_dark">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <!-- Imagen de portada del proyecto -->
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/clairo"
+                    android:contentDescription="Portada del Proyecto"
+                    android:scaleType="centerCrop"/>
+
+                <!-- Detalles del proyecto -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!-- Nombre del Proyecto -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The Weeknd, JENNIE y Lily Rose Depp - One Of The Girls"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="8dp"/>
+
+                    <!-- Descripción del Proyecto -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The Idol Episode 4 (Music from the HBO Original Series)"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray_light"
+                        android:maxLines="3"
+                        android:ellipsize="end"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Publicación 3 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="@color/gray_dark">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <!-- Imagen de portada del proyecto -->
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/billieeilish"
+                    android:contentDescription="Portada del Proyecto"
+                    android:scaleType="centerCrop"/>
+
+                <!-- Detalles del proyecto -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!-- Nombre del Proyecto -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Billie Eilish - BIRDS OF A FEATHER"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="8dp"/>
+
+                    <!-- Descripción del Proyecto -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Music video by Billie Eilish performing BIRDS OF A FEATHER (Lyric Video). © 2023 Darkroom/Interscope Records"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray_light"
+                        android:maxLines="3"
+                        android:ellipsize="end"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
