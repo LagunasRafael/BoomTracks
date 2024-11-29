@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="top|center_horizontal"
+    android:background="#343535">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREAR PROYECTO"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="start" />
+
+    <TextView
+        android:id="@+id/tvNombreProyecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Proyecto"
+        android:textSize="18dp"
+        android:paddingTop="50dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/etNombreProyecto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa el nombre del proyecto"
+        android:inputType="text"
+        android:paddingTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:textColorHint="@color/gray_light"/>
+
+    <TextView
+        android:id="@+id/tvUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa tu nombre"
+        android:inputType="text"
+        android:layout_marginBottom="8dp"
+        android:textColorHint="@color/gray_light"/>
+
+    <TextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripción del Proyecto"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/etDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa una descripción"
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="30dp"
+        android:textColorHint="@color/gray_light"/>
+
+    <Button
+        android:id="@+id/btnSeleccionarVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar Video"
+        android:textSize="16sp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/gray_dark"/>
+
+    <Button
+        android:id="@+id/btnCrearProyecto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear Proyecto"
+        android:textSize="16sp"
+        android:backgroundTint="@color/gray_dark"/>
+
+</LinearLayout>

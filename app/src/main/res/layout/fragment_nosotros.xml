@@ -44,6 +44,51 @@
             android:lineSpacingExtra="4dp"
             android:layout_marginBottom="16dp" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ubicacion"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alfredo Leon #47, La Regadera
+Ciudad Hidalgo, Michoacán
+"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/mapa"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:src="@drawable/mapa"
+            android:layout_marginTop="20dp"
+            android:contentDescription="Logo"
+            android:layout_marginBottom="16dp" />
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mision y Vision"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+
 
         <!-- Imagen o logo -->
         <ImageView
@@ -66,5 +111,7 @@
             android:textColor="@color/white"
             android:gravity="center"
             android:lineSpacingExtra="4dp" />
+
+
     </LinearLayout>
 </ScrollView>
