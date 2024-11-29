@@ -73,6 +73,7 @@
                 android:src="@drawable/like2"
                 android:contentDescription="Like" />
 
+
             <ImageButton
                 android:id="@+id/btn_comment"
                 android:layout_width="30dp"
@@ -105,6 +106,8 @@
                 android:text="Comentarios:\n- Excelente contenido!"
                 android:textColor="@color/white" />
         </LinearLayout>
+
+
 
 
         <androidx.constraintlayout.widget.ConstraintLayout

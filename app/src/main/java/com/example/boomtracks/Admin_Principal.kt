@@ -16,9 +16,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-
 class Admin_Principal : AppCompatActivity() {
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,14 +31,12 @@ class Admin_Principal : AppCompatActivity() {
         // Vincula el BottomNavigationView
         val bottomNavigationView2 = findViewById<BottomNavigationView>(R.id.bottom_navigationAdmin)
 
-
         // Cargar el fragmento inicial
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, HomeFragment())
                 .commit()
         }
-
 
         // Configura el listener para manejar las selecciones de los elementos
         bottomNavigationView2.setOnItemSelectedListener { menuItem ->
@@ -71,8 +67,6 @@ class Admin_Principal : AppCompatActivity() {
                     replaceFragment(ProfileFragment())
                     true
                 }
-
-
 
                 else -> false
             }
