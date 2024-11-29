@@ -31,7 +31,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         val commentsList2: TextView = view.findViewById(R.id.comments_list_2)
         val inputComment3: EditText = view.findViewById(R.id.input_comment_3)
         val commentsList3: TextView = view.findViewById(R.id.comments_list_3)
-//        val btnAgregar: Button= view.findViewById(R.id.btnAgregar)
+        val btnAgregar: Button= view.findViewById(R.id.btnAgregar)
 
 
         // Configurar el WebView
@@ -72,20 +72,20 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
 
 
-//        btnAgregar.setOnClickListener {
-//            // Iniciar una nueva transacción para cambiar de fragmento
-//            val transaction = requireActivity().supportFragmentManager.beginTransaction()
-//
-//            // Crear una instancia del fragmento de destino (CrearProyectoFragment)
-//            val fragment = CrearProyectoFragment()
-//
-//            // Agregar el fragmento al contenedor
-//            transaction.replace(R.id.fragment_container, fragment)
-//
-//            // Confirmar la transacción
-//            transaction.addToBackStack(null) // Esto permite que el fragmento se pueda volver atrás
-//            transaction.commit()
-//        }
+        btnAgregar.setOnClickListener {
+            // Iniciar una nueva transacción para cambiar de fragmento
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+
+            // Crear una instancia del fragmento de destino (CrearProyectoFragment)
+            val fragment = CrearProyectoFragment()
+
+            // Agregar el fragmento al contenedor
+            transaction.replace(R.id.fragment_container, fragment)
+
+            // Confirmar la transacción
+            transaction.addToBackStack(null) // Esto permite que el fragmento se pueda volver atrás
+            transaction.commit()
+        }
 
 
         btnComment.setOnClickListener {
