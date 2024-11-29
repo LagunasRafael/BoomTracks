@@ -41,7 +41,7 @@ class Login : AppCompatActivity() {
 
         //inicializar autenticacion
         auth = FirebaseAuth.getInstance()
-        correo = findViewById(R.id.txtCorreo)
+//        correo = findViewById(R.id.txtCorreo)
         password = findViewById(R.id.txtContrasena)
         btnIngresar = findViewById(R.id.btnIngresar)
         btnNoEstoyRegistrado = findViewById(R.id.btnNoRegistrado)
@@ -76,13 +76,10 @@ class Login : AppCompatActivity() {
             }
         }
 
-
         btnNoEstoyRegistrado.setOnClickListener {
             val intent = Intent(this, Registro::class.java)
             startActivity(intent)
         }
-
-
     }
 
     private fun redirigirUsuario(correo: String): String {
@@ -103,6 +100,5 @@ class Login : AppCompatActivity() {
         builder.setPositiveButton("Aceptar", null)
         val dialogo: AlertDialog = builder.create()
         dialogo.show()
-
     }
 }
