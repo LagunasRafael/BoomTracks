@@ -123,6 +123,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nombre de Usuario"
+
                 android:textColorHint="@color/white"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
