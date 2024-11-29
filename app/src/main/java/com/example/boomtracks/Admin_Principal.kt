@@ -59,9 +59,11 @@ class Admin_Principal : AppCompatActivity() {
 //                    supportFragmentManager.beginTransaction()
 //                        .replace(R.id.fragment_container, SearchFragment())
 //                        .commit()
-                    replaceFragment(UsuariosFragment())
+                    replaceFragment(Admin_UsuariosFragment())
                     true
                 }
+
+
 
                 else -> false
             }
