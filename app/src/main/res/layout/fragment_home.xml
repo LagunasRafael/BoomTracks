@@ -70,14 +70,14 @@
                 android:id="@+id/btn_like"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@drawable/like"
+                android:src="@drawable/like2"
                 android:contentDescription="Like" />
 
             <ImageButton
                 android:id="@+id/btn_comment"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/comentar"
+                android:src="@drawable/comentar2"
                 android:contentDescription="Comentar" />
         </LinearLayout>
 
