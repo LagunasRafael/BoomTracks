@@ -41,7 +41,6 @@ class Login : AppCompatActivity() {
 
         //inicializar autenticacion
         auth = FirebaseAuth.getInstance()
-
         correo = findViewById(R.id.txtCorreo)
         password = findViewById(R.id.txtContrasena)
         btnIngresar = findViewById(R.id.btnIngresar)
