@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.carousel.MaskableFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/carouseImageView"
+        android:layout_width="350dp"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:scaleType="centerCrop"
+    android:clipToOutline="true"
+    android:background="@drawable/rounded_corners_background" />
+</com.google.android.material.carousel.MaskableFrameLayout>
