@@ -29,7 +29,7 @@
                     android:id="@+id/profile_picture"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/billieeilish"
+
                     android:scaleType="centerCrop" />
             </FrameLayout>
 
@@ -71,6 +71,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/like2"
+                android:background="@android:color/transparent"
                 android:contentDescription="Like" />
 
 
@@ -78,8 +79,9 @@
                 android:id="@+id/btn_comment"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/comentar2"
-                android:contentDescription="Comentar" />
+                android:contentDescription="Comentar"
+                android:background="@android:color/transparent"
+                android:src="@drawable/comentar2" />
         </LinearLayout>
 
         <!-- Comentarios -->
