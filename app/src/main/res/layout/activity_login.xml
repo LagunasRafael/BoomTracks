@@ -98,21 +98,7 @@
 
 
             />
-        <Button
-            android:id="@+id/btnMenu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_margin="20dp"
-            android:text="Menu"
-            android:textColor="@color/black"
-            android:textAllCaps="true"
-            android:backgroundTint="#FFDE59"
-            android:textSize="16dp"
-            android:textStyle="bold"
 
-
-            />
 
     </LinearLayout>
 

@@ -45,7 +45,6 @@ class Login : AppCompatActivity() {
         password = findViewById(R.id.txtContrasena)
         btnIngresar = findViewById(R.id.btnIngresar)
         btnNoEstoyRegistrado = findViewById(R.id.btnNoRegistrado)
-        btnMenus = findViewById(R.id.btnMenu)
 
         val emailInput = findViewById<EditText>(R.id.emailInput) // EditText para el correo
         val btnIngresar = findViewById<Button>(R.id.btnIngresar) // Botón para iniciar sesión
