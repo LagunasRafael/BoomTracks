@@ -15,7 +15,8 @@
         android:textSize="25dp"
         android:textColor="@color/white"
         android:layout_marginBottom="8dp"
-        android:layout_gravity="start" />
+        android:layout_gravity="start"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/tvNombreProyecto"
@@ -25,7 +26,9 @@
         android:textSize="18dp"
         android:paddingTop="50dp"
         android:layout_marginBottom="8dp"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
 
     <EditText
         android:id="@+id/etNombreProyecto"
@@ -44,7 +47,9 @@
         android:text="Usuario"
         android:textSize="18sp"
         android:layout_marginBottom="8dp"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
 
     <EditText
         android:id="@+id/etUsuario"
@@ -62,7 +67,8 @@
         android:text="Descripción del Proyecto"
         android:textSize="18sp"
         android:layout_marginBottom="8dp"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/etDescripcion"
@@ -80,7 +86,9 @@
         android:text="Seleccionar Video"
         android:textSize="16sp"
         android:layout_marginBottom="30dp"
-        android:backgroundTint="@color/gray_dark"/>
+        android:textColor="@color/black"
+        android:backgroundTint="#FFDE59"
+        />
 
     <Button
         android:id="@+id/btnCrearProyecto"
@@ -88,6 +96,7 @@
         android:layout_height="wrap_content"
         android:text="Crear Proyecto"
         android:textSize="16sp"
-        android:backgroundTint="@color/gray_dark"/>
+        android:textColor="@color/black"
+        android:backgroundTint="#FFDE59"/>
 
 </LinearLayout>
