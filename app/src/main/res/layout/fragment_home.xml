@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,7 +10,7 @@
         android:orientation="vertical"
         android:layout_margin="0dp">
 
-        <!-- Sección para perfil y nombre -->
+        <!-- Publicación 1 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -26,7 +25,7 @@
                 android:layout_marginEnd="10dp">
 
                 <ImageView
-                    android:id="@+id/profile_picture"
+                    android:id="@+id/profile_picture_1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@drawable/billieeilish"
@@ -34,7 +33,7 @@
             </FrameLayout>
 
             <TextView
-                android:id="@+id/nombrePerfil"
+                android:id="@+id/nombrePerfil_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Billie Eilish"
@@ -42,7 +41,6 @@
                 android:textColor="@color/white" />
         </LinearLayout>
 
-        <!-- Video y opciones -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,13 +49,12 @@
             android:text="Billie Eilish - Birds Of A Feather" />
 
         <WebView
-            android:id="@+id/youtube_webview"
+            android:id="@+id/youtube_webview_1"
             android:layout_width="match_parent"
             android:layout_marginTop="10dp"
             android:layout_marginHorizontal="20dp"
             android:layout_height="200dp" />
 
-        <!-- Botones -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -67,22 +64,20 @@
             android:gravity="center_vertical">
 
             <ImageButton
-                android:id="@+id/btn_like"
+                android:id="@+id/btn_like_1"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/like2"
                 android:contentDescription="Like" />
 
-
             <ImageButton
-                android:id="@+id/btn_comment"
+                android:id="@+id/btn_comment_1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/comentar2"
                 android:contentDescription="Comentar" />
         </LinearLayout>
 
-        <!-- Comentarios -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -91,7 +86,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/input_comment"
+                android:id="@+id/input_comment_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Escribe un comentario..."
@@ -99,7 +94,7 @@
                 android:padding="8dp" />
 
             <TextView
-                android:id="@+id/comments_list"
+                android:id="@+id/comments_list_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -107,25 +102,193 @@
                 android:textColor="@color/white" />
         </LinearLayout>
 
-
-
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
+        <!-- Publicación 2 -->
+        <!-- Copia la estructura de la publicación 1 y cambia los IDs -->
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
 
-            <Button
-                android:id="@+id/btnAgregar"
+            <FrameLayout
                 android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:text="+"
-                android:backgroundTint="@color/gray_dark"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+                android:layout_height="60dp"
+                android:layout_marginEnd="10dp">
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <ImageView
+                    android:id="@+id/profile_picture_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/billieeilish"
+                    android:scaleType="centerCrop" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/nombrePerfil_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Weeknd"
+                android:textSize="22sp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/white"
+            android:text="The Weeknd - One of The Girls Ft Rose Deep" />
+
+        <WebView
+            android:id="@+id/youtube_webview_2"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="200dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/btn_like_2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/like2"
+                android:contentDescription="Like" />
+
+            <ImageButton
+                android:id="@+id/btn_comment_2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/comentar2"
+                android:contentDescription="Comentar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/input_comment_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escribe un comentario..."
+                android:background="#545454"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/comments_list_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Comentarios:\n- Muy interesante!"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- Publicación 2 -->
+        <!-- Copia la estructura de la publicación 1 y cambia los IDs -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="10dp">
+
+                <ImageView
+                    android:id="@+id/profile_picture_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ladygaga"
+                    android:scaleType="centerCrop" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/nombrePerfil_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lady Gaga"
+                android:textSize="22sp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/white"
+            android:text="Lady Gaga -  Die With A Smile Ft Bruno Mars" />
+
+        <WebView
+            android:id="@+id/youtube_webview_3"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="200dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/btn_like_3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/like2"
+                android:contentDescription="Like" />
+
+            <ImageButton
+                android:id="@+id/btn_comment_3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/comentar2"
+                android:contentDescription="Comentar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/input_comment_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escribe un comentario..."
+                android:background="#545454"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/comments_list_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Comentarios:\n- Muy interesante!"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- Puedes agregar más publicaciones de forma similar -->
 
     </LinearLayout>
 </ScrollView>
