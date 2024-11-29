@@ -1,7 +1,6 @@
 package com.example.boomtracks
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -30,10 +29,16 @@ class ProfileFragment : Fragment() {
 
     private fun getImages(): List<Int> {
         return listOf(
-            R.drawable.pop,
-            R.drawable.charlie,
-            R.drawable.billieeilish,
-            R.drawable.indie
+            R.drawable.rafa,
+            R.drawable.rafa2,
+            R.drawable.rafa3,
+            R.drawable.alexis2,
+            R.drawable.alexis,
+            R.drawable.alexis4,
+            R.drawable.luis,
+            R.drawable.alexis3,
+
+
         )
     }
 }

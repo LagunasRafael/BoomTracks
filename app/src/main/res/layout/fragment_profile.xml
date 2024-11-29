@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/black"
+    android:background="#343535"
     tools:context=".ProfileFragment">
 
     <LinearLayout
@@ -15,16 +15,39 @@
         android:orientation="vertical"
         android:gravity="center">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/carouseRecyclerView"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="700dp"
-            android:visibility="visible"
-            android:clipChildren="false"
-            android:clipToPadding="false"
-            android:orientation="horizontal"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager" />
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ECOWEB"
+                android:textSize="40dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#FFFF"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintVertical_bias="0"
+                android:layout_marginTop="60dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/carouseRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:visibility="visible"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"
+                app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </LinearLayout>
 </ScrollView>
