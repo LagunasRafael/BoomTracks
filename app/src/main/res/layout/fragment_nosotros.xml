@@ -74,11 +74,7 @@ Ciudad Hidalgo, Michoacán
             android:src="@drawable/mapa"
             android:layout_marginTop="20dp"
             android:contentDescription="Logo"
-            android:layout_marginBottom="16dp" />
-
-
-
-
+            android:layout_marginBottom="16dp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -89,7 +85,6 @@ Ciudad Hidalgo, Michoacán
             android:textColor="@color/white"
             />
 
-
         <!-- Imagen o logo -->
         <ImageView
             android:id="@+id/instrumentos"
@@ -98,7 +93,7 @@ Ciudad Hidalgo, Michoacán
             android:src="@drawable/instrumentos"
             android:layout_marginTop="20dp"
             android:contentDescription="Logo"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"/>
 
         <!-- Información adicional -->
         <TextView
