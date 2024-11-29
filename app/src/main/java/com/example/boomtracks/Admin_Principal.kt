@@ -63,6 +63,15 @@ class Admin_Principal : AppCompatActivity() {
                     true
                 }
 
+                R.id.menu_publicaciones -> {
+//                    // Acción para "perfil"
+//                    supportFragmentManager.beginTransaction()
+//                        .replace(R.id.fragment_container, SearchFragment())
+//                        .commit()
+                    replaceFragment(ProfileFragment())
+                    true
+                }
+
 
 
                 else -> false
