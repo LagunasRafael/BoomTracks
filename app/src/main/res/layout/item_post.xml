@@ -26,12 +26,14 @@
             android:id="@+id/btn_like"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/like2" />
+            android:background="@android:color/transparent"
+            android:src="@drawable/like" />
 
         <ImageButton
             android:id="@+id/btn_comment"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/comentar2" />
+            android:background="@android:color/transparent"
+            android:src="@drawable/comentar" />
     </LinearLayout>
 </LinearLayout>

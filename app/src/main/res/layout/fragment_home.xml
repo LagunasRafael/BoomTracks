@@ -67,7 +67,7 @@
                 android:id="@+id/btn_like_1"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@drawable/like2"
+                android:src="@drawable/like"
                 android:background="@android:color/transparent"
                 android:contentDescription="Like" />
 
@@ -77,7 +77,7 @@
                 android:layout_height="30dp"
                 android:contentDescription="Comentar"
                 android:background="@android:color/transparent"
-                android:src="@drawable/comentar2" />
+                android:src="@drawable/comentar" />
         </LinearLayout>
 
         <LinearLayout
@@ -162,14 +162,16 @@
                 android:id="@+id/btn_like_2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@drawable/like2"
+                android:src="@drawable/like"
+                android:background="@android:color/transparent"
                 android:contentDescription="Like" />
 
             <ImageButton
                 android:id="@+id/btn_comment_2"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/comentar2"
+                android:src="@drawable/comentar"
+                android:background="@android:color/transparent"
                 android:contentDescription="Comentar" />
         </LinearLayout>
 
@@ -255,14 +257,14 @@
                 android:id="@+id/btn_like_3"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@drawable/like2"
+                android:src="@drawable/like"
                 android:contentDescription="Like" />
 
             <ImageButton
                 android:id="@+id/btn_comment_3"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/comentar2"
+                android:src="@drawable/comentar"
                 android:contentDescription="Comentar" />
         </LinearLayout>
 
