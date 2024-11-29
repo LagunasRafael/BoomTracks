@@ -316,11 +316,14 @@
             android:layout_width="80dp"
             android:layout_height="60dp"
             android:text="+"
-            android:backgroundTint="@color/gray_dark"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#FFDE59"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginBottom="112dp"
-            android:layout_marginRight="30dp"/>
+            android:layout_marginRight="30dp"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
