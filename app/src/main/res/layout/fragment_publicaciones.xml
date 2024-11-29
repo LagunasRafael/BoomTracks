@@ -45,7 +45,7 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_marginEnd="16dp"
-                    android:src="@drawable/brunomars"
+                    android:src="@drawable/ladygaga"
                     android:contentDescription="Portada del Proyecto"
                     android:scaleType="centerCrop"/>
 
@@ -99,7 +99,7 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_marginEnd="16dp"
-                    android:src="@drawable/clairo"
+                    android:src="@drawable/thewekend"
                     android:contentDescription="Portada del Proyecto"
                     android:scaleType="centerCrop"/>
 

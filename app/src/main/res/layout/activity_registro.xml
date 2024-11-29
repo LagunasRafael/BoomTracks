@@ -52,8 +52,6 @@
                 android:textColor="@color/gray_light"
                 />
 
-
-
             <CheckBox
                 android:id="@+id/cbAdmin_registro"
                 android:layout_width="wrap_content"
